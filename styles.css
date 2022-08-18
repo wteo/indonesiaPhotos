@@ -1,9 +1,45 @@
 * {
+    --navigation-bar-background-color: rgb(116, 62, 62);
     --main-background-color: brown;
-    --title-font-color: white;
-    background-color: antiquewhite;
+    --main-font-color: white;
+    --alternate-font-color: brown;
     margin: auto 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+p, h1 {
+    color: var(--alternate-font-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+#navigation {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: var(--main-background-color);
+    padding: 2%;
+    z-index: 100;
+    transform: translateX(-97.5%);
+    transition: transform ease-in 0.5s;
+}
+
+#navigation:hover {
+    transform: translateX(0%);
+}
+
+#navigation p:hover {
+    text-decoration: underline;
+}
+
+#navigation p {
+    color: var(--main-font-color);
+    padding-top: 15%;
+    padding-right: 20%;
 }
 
 .main-container {
@@ -11,12 +47,13 @@
     flex-direction: column;
 }
 
-#indonesia-title, #yoghakarta-title, #bali-title {
+.title h1 {
     padding-top: 20%;
     padding-bottom: 25%;
 
     text-align: center;
-    color: var(--title-font-color);
+    font-size: 400%;
+    color: var(--main-font-color);
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,23 +72,23 @@
     background-image: url("./images/templeGate.jpg");
 }
 
-.about {
+#about, #copyright {
+    padding: 2.5%;
     text-align: center;
+}
+
+#about h1 {
+    font-size: 360%;
 }
 
 .title, .image {
     width: 100%;
 }
 
-.title img, .image img {
+.title img, .image img, #menu-icon img {
     width: 100%; 
     display: block;
     transition: width 2s;
-}
-
-.image:hover, .image img:hover {
-    width: 130%;
-    z-index: 100;
 }
 
 .gallery {
@@ -66,4 +103,57 @@
 footer {
     background-color: var(--main-background-color);
 }
+
+#contact p, #copyright p {
+    color: var(--main-font-color);
+}
+
+@media (max-width: 780px) {
+    .title h1 {
+        font-size: 200%;
+    }
+
+    #about h1 {
+        font-size: 160%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    #image1         {order: 1;}
+    #description1   {order: 2;}
+    #image2         {order: 3;}
+    #description2   {order: 4;}
+    #image3         {order: 5;}
+    #description3   {order: 6;}
+    #image4         {order: 7;}
+    #description4   {order: 8;}
+    #image5         {order: 9;}
+    #description5   {order: 10;}
+    #image6         {order: 11;}
+    #description6   {order: 12;}
+    #image7         {order: 13;}
+    #description7   {order: 14;}
+    #image8         {order: 15;}
+    #description8   {order: 16;}
+    #image9         {order: 17;}
+    #description9   {order: 18;}
+    #image10        {order: 19;}
+    #description10  {order: 20;}
+    #image11        {order: 21;}
+    #description11  {order: 22;}
+}
+
+@media (max-width: 1150px) and (min-width: 779px) {
+    .title h1 {
+        font-size: 300%;
+    }
+
+    #about h1 {
+        font-size: 260%;
+    }
+}
+
+
 
