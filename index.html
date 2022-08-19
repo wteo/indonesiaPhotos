@@ -3,6 +3,7 @@
     <head>
         <title>My Indonesia Title Photos</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body class="main-container">
         <nav id="navigation">
@@ -22,7 +23,7 @@
             <h1 id="yoghakarta-title">Yoghakarta</h1>
         </div>
         <div class="gallery">
-            <div id="image1" class="image">
+            <div id="image1" class="image" data-aos="zoom-in">
                 <img src="./images/borobudur1.jpg" alt="Borobudur"/>
             </div>
             <div id="description1">
@@ -31,10 +32,10 @@
             <div id="description2">
                 <p class="description">Description of Image</p>
             </div>
-            <div id="image2" class="image">
+            <div id="image2" class="image" data-aos="zoom-in">
                 <img src="./images/borobudur2.jpg" alt="Borobudur"/>
             </div>
-            <div id="image3" class="image">
+            <div id="image3" class="image" data-aos="zoom-in">
                 <img src="./images/borobudur3.jpg" alt="Borobudur"/>
             </div>
             <div id="description3">
@@ -43,10 +44,10 @@
             <div id="description4">
                 <p class="description">Description of Image</p>
             </div>
-            <div id="image4" class="image">
+            <div id="image4" class="image" data-aos="zoom-in">
                 <img src="./images/jomblang.jpg" alt="Jomblang Cave"/>
             </div>
-            <div id="image5" class="image">
+            <div id="image5" class="image" data-aos="zoom-in">
                 <img src="./images/jomblang2.jpg" alt="Jomblang Cave"/>
             </div>
             <div id="description5">
@@ -55,10 +56,10 @@
             <div id="description6">
                 <p class="description">Description of Image</p>
             </div>
-            <div id="image6" class="image">
+            <div id="image6" class="image" data-aos="zoom-in">
                 <img src="./images/waterpalace.jpg" alt="Water Palace"/>
             </div>
-            <div id="image7" class="image">
+            <div id="image7" class="image" data-aos="zoom-in">
                 <img src="./images/prambanan.jpg" alt="Prambanan Temple"/>
             </div>
             <div id="description7">
@@ -69,7 +70,7 @@
             <h1 id="bali-title">Bali</h1>
         </div>
         <div class="gallery">
-            <div id="image8" class="image">
+            <div id="image8" class="image" data-aos="zoom-in">
                 <img src="./images/offerings.jpg" alt="Offerings"/>
             </div>
             <div id="description8">
@@ -78,10 +79,10 @@
             <div id="description9">
                 <p class="description">Description of Image</p>
             </div>
-            <div id="image9" class="image">
+            <div id="image9" class="image" data-aos="zoom-in">
                 <img src="./images/ricefield.jpg" alt="Rice Fields"/>
             </div>
-            <div id="image10" class="image">
+            <div id="image10" class="image" data-aos="zoom-in">
                 <img src="./images/sunset.jpg" alt="Sunset"/>
             </div>
             <div id="description10">
@@ -90,15 +91,18 @@
             <div id="description11">
                 <p class="description">Description of Image</p>
             </div>
-            <div id="image11" class="image">
+            <div id="image11" class="image" data-aos="zoom-in">
                 <img src="./images/volcano.jpg" alt="Volcano"/>
             </div>
         </div>
         <footer>
             <div id="copyright">
                 <p>© Wendy Teo 2022 • Designs by Me!</p>
-                <p>Sydney, Australia</p>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
