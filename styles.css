@@ -3,6 +3,7 @@
     --main-background-color: brown;
     --main-font-color: white;
     --alternate-font-color: brown;
+    --border-color: rgb(75, 20, 20);
     margin: auto 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -21,8 +22,8 @@ a {
     position: fixed;
     top: 0%;
     left: 0%;
-    background-color: var(--main-background-color);
-    padding: 2%;
+    right: 80%;
+    background-color: rgba(0,0,0,0.5);
     z-index: 100;
     transform: translateX(-97.5%);
     transition: transform ease-in 0.5s;
@@ -32,14 +33,23 @@ a {
     transform: translateX(0%);
 }
 
-#navigation p:hover {
-    text-decoration: underline;
-}
-
 #navigation p {
     color: var(--main-font-color);
-    padding-top: 15%;
-    padding-right: 20%;
+    background-color: var(--main-background-color);
+    padding: 7.5% 20%;
+    margin: 3%;
+    text-align: center;
+    font-size: 150%;
+    border: 3px solid var(--border-color);
+    transition: background-color 0.25s;
+}
+
+#navigation p:hover {
+    background-color: var(--border-color);
+}
+
+#navigation, #navigation p {
+    border-radius: 10px;
 }
 
 .main-container {
@@ -108,7 +118,35 @@ footer {
     color: var(--main-font-color);
 }
 
+@media (max-width: 1150px) and (min-width: 779px) {
+
+    #navigation {
+        right: 77.5%;
+    }
+
+    #navigation p {
+        font-size: 150%;
+    }
+
+    .title h1 {
+        font-size: 300%;
+    }
+
+    #about h1 {
+        font-size: 260%;
+    }
+}
+
 @media (max-width: 780px) {
+
+    #navigation {
+        right: 65%;
+    }
+
+    #navigation p {
+        font-size: 100%;
+    }
+
     .title h1 {
         font-size: 200%;
     }
@@ -143,16 +181,6 @@ footer {
     #description10  {order: 20;}
     #image11        {order: 21;}
     #description11  {order: 22;}
-}
-
-@media (max-width: 1150px) and (min-width: 779px) {
-    .title h1 {
-        font-size: 300%;
-    }
-
-    #about h1 {
-        font-size: 260%;
-    }
 }
 
 
