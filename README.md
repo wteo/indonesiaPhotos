@@ -1,6 +1,8 @@
 # Photo Gallery
 
-I built this landing page whilst learning the more advanced concepts of CSS such as FlexBox, Media Response, Grid, Transitions, and Animations. This single page website features many of my favourite travel photoes whilst I was touring around Indonesia in 2018.
+I built this landing page whilst learning the more advanced concepts of CSS such as FlexBox, Media Response, Grid, Transitions, and Animations. The challenge is to build a sleek website with some animations and interactivity added without the help of JavaScript. 
+
+This single page website features many of my favourite travel photoes whilst I was touring around Indonesia in 2018.
 
 <br/>
 <h2>Features</h2>
