@@ -6,9 +6,7 @@ This single page website features many of my favourite travel photoes whilst I w
 
 Understand the local history and culture are two areas I especially enjoy exploring when I travel.
 
-Link to the website:
-
-https://wteo.github.io/photogallery/
+Link to the <a href="https://wteo.github.io/photoGallery/">website</a>.
 
 <br/>
 <h2>Features</h2>
