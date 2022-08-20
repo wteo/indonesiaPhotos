@@ -24,7 +24,7 @@ a {
     right: 80%;
     background-color: rgba(0,0,0,0.5);
     z-index: 100;
-    transform: translateX(-92.5%);
+    transform: translateX(-95%);
     transition: transform ease-in 0.5s;
 }
 
@@ -36,7 +36,7 @@ a {
     color: var(--main-font-color);
     background-color: var(--main-background-color);
     padding: 7.5% 20%;
-    margin: 7.5%;
+    margin: 5%;
     text-align: center;
     font-size: 150%;
     border: 3px solid var(--border-color);
