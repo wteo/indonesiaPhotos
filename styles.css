@@ -127,7 +127,7 @@ footer {
 @media only screen and (max-width: 1150px) and (min-width: 780px) {
 
     #navigation {
-        right: 72.5%;
+        right: 82.5%;
     }
 
     #navigation p {
@@ -146,7 +146,7 @@ footer {
 @media only screen and (max-width: 779px) {
 
     #navigation {
-        right: 60%;
+        right: 70%;
     }
 
     #navigation p {
