@@ -67,7 +67,6 @@ a {
     text-transform: uppercase;
     letter-spacing: 15px;
     font-size: 400%;
-    font-family: Copperplate, Papyrus, fantasy;
     color: var(--main-font-color);
 
     background-size: cover;
