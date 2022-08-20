@@ -1,3 +1,7 @@
 # Photo Gallery
 
-Built out of pure CSS and HTML. This is a website featuring my travel photos in Indonesia.
+I built this landing page whilst learning the more advanced concepts of CSS such as FlexBox, Media Response, Grid, Transitions, and Animations.
+
+
+
+
