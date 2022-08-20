@@ -8,7 +8,7 @@ Understand the local history and culture are two areas I especially enjoy explor
 
 Link to the website:
 
-wteo.github.io/photogallery/
+https://wteo.github.io/photogallery/
 
 <br/>
 <h2>Features</h2>
