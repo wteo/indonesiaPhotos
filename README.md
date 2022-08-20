@@ -24,9 +24,18 @@ The menu is hidden on the left side of page. When you hover your mouse or finger
 ![image](https://user-images.githubusercontent.com/87306585/185769456-ff36d084-6a1a-4c18-a6ef-d383ef94a943.png)
 
 
-<h4>Rotating Flowers</4>
+<h4>The Photoes</h4>
 
-I added these rotating flower icons to give the website a bit more personality. In the design perspective, this also fits the nature and religious vibe of Indonesia. In particular, in popular tourist areas such as Bali. 
+Each photo has a hidden description that gives brief details over what the image is about. This description will appear when you hover your mouse or finger over the right-bottom corner of each photo. 
+
+To see the full view of the image again, simply move your mouse or finger away from the description box.
+
+![image](https://user-images.githubusercontent.com/87306585/185769609-5ee96b89-297e-448b-b9ef-f93a5095b577.png)
+
+
+<h4>Rotating Flowers</h4>
+
+I added these rotating flower icons to test the animation feature in CSS and to give the website a bit more personality. In the design perspective, this also fits the nature and religious vibe of Indonesia. In particular, in popular tourist areas such as Bali. 
 
 ![image](https://user-images.githubusercontent.com/87306585/185769488-3f1bc69e-2710-473b-9252-85b9ec1e89c4.png)
 
