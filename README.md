@@ -3,6 +3,7 @@
 I built this landing page whilst learning the more advanced concepts of CSS such as FlexBox, Media Response, Grid, Transitions, and Animations. This single page website features many of my favourite travel photoes whilst I was touring around Indonesia in 2018.
 
 <h2>Features</h2>
+<br/>
 
 <h4>The Galleries</h4>
 
@@ -14,7 +15,8 @@ When you shrink the page to the width of 779px or smaller, the Grid arrangement 
 
 ![image](https://user-images.githubusercontent.com/87306585/185769319-d9192277-de6c-4ba1-a280-275db9cecd58.png)
 
-
+<br/>
+<br/>
 <h4>The Navigation Menu</h4>
 
 The menu is hidden on the left side of page. When you hover your mouse or finger over the small visible gray bar on your left, the navigation bar will slide right and show itself. The navigation bar will hide itself again when you hover out of the menu.
@@ -23,7 +25,8 @@ The menu is hidden on the left side of page. When you hover your mouse or finger
 
 ![image](https://user-images.githubusercontent.com/87306585/185769456-ff36d084-6a1a-4c18-a6ef-d383ef94a943.png)
 
-
+<br/>
+<br/>
 <h4>The Photoes</h4>
 
 Each photo has a hidden description that gives brief details over what the image is about. This description will appear when you hover your mouse or finger over the right-bottom corner of each photo. 
@@ -32,7 +35,8 @@ To see the full view of the image again, simply move your mouse or finger away f
 
 ![image](https://user-images.githubusercontent.com/87306585/185769609-5ee96b89-297e-448b-b9ef-f93a5095b577.png)
 
-
+<br/>
+<br/>
 <h4>Rotating Flowers</h4>
 
 I added these rotating flower icons to test the animation feature in CSS and to give the website a bit more personality. In the design perspective, this also fits the nature and religious vibe of Indonesia. In particular, in popular tourist areas such as Bali. 
