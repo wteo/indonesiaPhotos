@@ -4,6 +4,8 @@ I built this landing page whilst learning the more advanced concepts of CSS such
 
 This single page website features many of my favourite travel photoes whilst I was touring around Indonesia in 2018.
 
+Understand the local history and culture are two areas I especially enjoy exploring when I travel.
+
 <br/>
 <h2>Features</h2>
 
