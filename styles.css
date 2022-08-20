@@ -21,7 +21,7 @@ a {
     position: fixed;
     top: 0%;
     left: 0%;
-    right: 72.50%;
+    right: 70%;
     background-color: rgba(0,0,0,0.5);
     z-index: 100;
     transform: translateX(-95%);
@@ -127,7 +127,7 @@ footer {
 @media only screen and (max-width: 1150px) and (min-width: 780px) {
 
     #navigation {
-        right: 70%;
+        right: 67.5%;
     }
 
     #navigation p {
@@ -146,11 +146,11 @@ footer {
 @media only screen and (max-width: 779px) {
 
     #navigation {
-        right: 57.5%;
+        right: 55%;
     }
 
     #navigation p {
-        font-size: 90%;
+        font-size: 95%;
     }
 
     .title h1 {
