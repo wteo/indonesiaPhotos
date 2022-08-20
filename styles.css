@@ -1,8 +1,10 @@
 * {
     --main-background-color: rgb(165, 95, 42);
+    --alternate-background-color: rgba(0,0,0,0.5);
     --main-font-color: white;
-    --alternate-font-color: rgb(165, 95, 42);
-    --border-color: rgb(86, 60, 40);
+    --alternate-font-color: rgb(209, 121, 55);
+    --border-color: rgb(112, 49, 0);
+    --border-pattern: 3px solid var(--border-color);
     margin: auto 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -22,7 +24,7 @@ a {
     top: 0%;
     left: 0%;
     right: 72.50%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: var(--alternate-background-color);
     z-index: 100;
     transform: translateX(-95%);
     transition: transform ease-in 0.5s;
@@ -39,7 +41,7 @@ a {
     margin: 6%;
     text-align: center;
     font-size: 135%;
-    border: 3px solid var(--border-color);
+    border: var(--border-pattern);
     transition: background-color 0.25s;
 }
 
@@ -74,7 +76,7 @@ a {
 }
 
 #yogyakarta-title {
-    background-image: url("./images/titleyogya.jpg");
+    background-image: url("./images/titleyogha.jpg");
 }
 
 #bali-title {
@@ -82,9 +84,9 @@ a {
 }
 
 #about {
-    border: 3px solid var(--border-color);
-    margin: 5% 15%;
-    padding: 10%;
+    border: var(--border-pattern);
+    margin: 10% 15%;
+    padding: 5% 10%;
     border-radius: 10px;
 }
 
@@ -97,30 +99,105 @@ a {
     font-size: 360%;
 }
 
-.title, .image {
+.title, .image{
     width: 100%;
 }
 
-.title img, .image img, #menu-icon img {
+.flower {
+    width: 5%;
+    display: block;
+    margin: 0% auto;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%; 
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.title img, .image img, #menu-icon img, .flower img {
     width: 100%; 
     display: block;
     transition: width 2s;
 }
 
+.image {
+    border: var(--border-pattern);
+    border-radius: 15px;
+}
+
+.image img {
+    padding: 1%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.description-inner-container {
+    z-index: 25;
+    position: relative;
+    top: -135px;
+    padding: 2%;
+    margin-left: 15%;
+    margin-bottom: -5%;
+    background-color: rgba(0, 0, 0, 0.752);
+    animation: fade-out ease-out 0.25s forwards;
+    cursor: pointer;
+}
+
+.description-inner-container p {
+    margin-top: 1.5%;
+}
+
+.description-inner-container:hover {
+    animation: fade-in ease-out 0.25s forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.description {
-    padding: 3%;
+    justify-content: center;
+    align-content: center;
+    column-gap: 2%;
+    margin: 0% 3%;
 }
 
 footer {
     background-color: var(--main-background-color);
 }
 
-#contact p, #copyright p {
+#copyright p {
     color: var(--main-font-color);
 }
 
@@ -136,6 +213,10 @@ footer {
 
     .title h1 {
         font-size: 300%;
+    }
+
+    .flower {
+        width: 7.5%;
     }
 
     #about h1 {
@@ -154,9 +235,13 @@ footer {
     }
 
     .title h1 {
-        font-size: 200%;
+        font-size: 300%;
         padding-top: 35%;
         padding-bottom: 45%;
+    }
+
+    .flower {
+        width: 10%;
     }
 
     #about h1 {
@@ -167,32 +252,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .description {
-        padding-bottom: 10%;
-    }
-    
-    #image1         {order: 1;}
-    #description1   {order: 2;}
-    #image2         {order: 3;}
-    #description2   {order: 4;}
-    #image3         {order: 5;}
-    #description3   {order: 6;}
-    #image4         {order: 7;}
-    #description4   {order: 8;}
-    #image5         {order: 9;}
-    #description5   {order: 10;}
-    #image6         {order: 11;}
-    #description6   {order: 12;}
-    #image7         {order: 13;}
-    #description7   {order: 14;}
-    #image8         {order: 15;}
-    #description8   {order: 16;}
-    #image9         {order: 17;}
-    #description9   {order: 18;}
-    #image10        {order: 19;}
-    #description10  {order: 20;}
-    #image11        {order: 21;}
-    #description11  {order: 22;}
 }
 
 
