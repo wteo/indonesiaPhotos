@@ -102,7 +102,7 @@ a {
     font-size: 360%;
 }
 
-.title, .image{
+.title, .image-inner-container{
     width: 100%;
 }
 
@@ -125,18 +125,18 @@ a {
     }
 }
 
-.title img, .image img, #menu-icon img, .flower img {
+.title img, .image-inner-container img, #menu-icon img, .flower img {
     width: 100%; 
     display: block;
     transition: width 2s;
 }
 
-.image {
+.image-inner-container {
     border: var(--border-pattern);
     border-radius: 15px;
 }
 
-.image img {
+.image-inner-container img {
     padding: 1%;
     border-radius: 20px;
     position: relative;
