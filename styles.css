@@ -8,6 +8,7 @@
     margin: auto 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 p, h1, h2 {
@@ -63,7 +64,10 @@ a {
     padding-bottom: 25%;
 
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 15px;
     font-size: 400%;
+    font-family: Copperplate, Papyrus, fantasy;
     color: var(--main-font-color);
 
     background-size: cover;
@@ -235,7 +239,7 @@ footer {
     }
 
     .title h1 {
-        font-size: 300%;
+        font-size: 200%;
         padding-top: 35%;
         padding-bottom: 45%;
     }
