@@ -1,16 +1,11 @@
 # Photo Gallery
 
-I built this landing page whilst learning the more advanced concepts of CSS such as FlexBox, Media Response, Grid, Transitions, and Animations. The challenge is to build a sleek website with some animations and interactivity added without the help of JavaScript. 
+This is a single page <a href="https://wteo.github.io/photoGallery/">website</a> featuring many of my favourite travel photoes whilst I was touring around Indonesia in 2018. Understanding the local history and culture are two areas I especially enjoy exploring whenever I visit a country. Hence, you'll find a lot images of historic temples and day-to-day local activities here.
 
-This single page website features many of my favourite travel photoes whilst I was touring around Indonesia in 2018.
-
-Understand the local history and culture are two areas I especially enjoy exploring when I travel.
-
-Link to the <a href="https://wteo.github.io/photoGallery/">website</a>.
+I built this whilst learning the more advanced concepts of CSS such as FlexBox, Media Response, Grid, Transitions, and Animations. The challenge is to build a sleek website with some simple animations and interactivity added without the help of JavaScript. 
 
 <br/>
 <h2>Features</h2>
-
 
 <h4>The Galleries</h4>
 
@@ -48,9 +43,12 @@ I added these rotating flower icons to test the animation feature in CSS and to 
 ![image](https://user-images.githubusercontent.com/87306585/185769488-3f1bc69e-2710-473b-9252-85b9ec1e89c4.png)
 
 <br/>
-<br/>
-End.
-<br/>
+<h4>End Words</h4>
+
+What I enjoy most about this project is adding animations to the website. Web design and UI are the areas in web development that I, in particular, have interest in. Hence, this has been a very fun project for me to do.
+
+Please enjoy admiring the photoes as much as I have taking them.
+
 
 
 
