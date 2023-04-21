@@ -75,15 +75,15 @@ a {
 }
 
 #indonesia-title {
-    background-image: url("./images/titleBali.jpg");
+    background-image: url("./images/title-bali.jpg");
 }
 
 #yogyakarta-title {
-    background-image: url("./images/titleyogha.jpg");
+    background-image: url("./images/title-yogha.jpg");
 }
 
 #bali-title {
-    background-image: url("./images/templeGate.jpg");
+    background-image: url("./images/temple-gate.jpg");
 }
 
 #about {
@@ -91,6 +91,10 @@ a {
     margin: 10% 15%;
     padding: 5% 10%;
     border-radius: 10px;
+}
+
+#about p {
+    font-size: 150%;
 }
 
 #about, #copyright {
