@@ -1,9 +1,10 @@
 :root {
-    --main-background-color: rgb(165, 95, 42);
+    --main-background-color: rgba(165, 95, 42);
     --alternate-background-color: rgba(0, 0, 0, 0.7);
-    --main-font-color: white;
-    --alternate-font-color: rgb(214, 156, 112);
-    --border-color: rgb(112, 49, 0);
+    --main-font-color: #FFFFFF;
+    --alternate-font-color: rgb(234, 159, 101);
+    --shadow-color: rgba(246, 193, 152, 0.6);
+    --border-color: rgb(112,49,0);
     --border-pattern: 3px solid var(--border-color);
     --font-size-largest: 3.0rem;
     --font-size-large: 1.5rem;
@@ -16,9 +17,13 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Merriweather;
 }
-  
+
+/* This is to 100% fit each image, icon & title into its respective container */
+img, .title, .image-inner-container {
+    width: 100%;
+} 
 
 p, h1, h2 {
     color: var(--alternate-font-color);
@@ -29,6 +34,13 @@ a {
     color: var(--main-font-color);
 }
 
+/* body */
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation styles */
 #menu {
     position: fixed;
     width: 50px;
@@ -40,9 +52,12 @@ a {
 }
 
 #menu img {
-    width: 100%;
     margin: 15px;
     padding: 5px;
+}
+
+#menu:hover {
+    cursor: pointer;
 }
 
 #navigation {
@@ -85,22 +100,14 @@ a {
     width: 50px;
 }
 
-#navigation a .navigation-icon img {
-    width: 100%;
-}
-
-#navigation a:hover, #navigation a:active:after {
+#navigation a:hover, #navigation a:active:after, #navigation a:focus, #navigation a:focus-visible {
     background-color: var(--border-color);
     text-decoration: underline;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-}
-
+/* Image Title Syles */
 .title h1 {
-    padding: 20% 0 25%;
+    padding: 27.5% 0 30%;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 15px;
@@ -123,6 +130,7 @@ a {
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("./images/temple-gate.jpg");
 }
 
+/* About Styles */
 #about {
     border: var(--border-pattern);
     margin: 10% 15%;
@@ -143,11 +151,8 @@ a {
     font-size: var(--font-size-largest);
 }
 
-.title, .image-inner-container{
-    width: 100%;
-}
-
-.flower {
+/* Rotating flower styles */
+.rotating-flower {
     width: 5%;
     display: block;
     margin: 0% auto;
@@ -166,15 +171,15 @@ a {
     }
 }
 
-.title img, .image-inner-container img, #menu-icon img, .flower img {
-    width: 100%; 
+.title img, .image-inner-container img, #menu-icon img, .rotating-flower img {
     display: block;
     transition: width 2s;
 }
 
+/* Image gallery Styles */
 .image-inner-container img {
     position: relative;
-    box-shadow: 10px 10px 20px rgba(98, 50, 2, 0.5); 
+    box-shadow: 10px 10px 20px var(--shadow-color); 
 }
 
 .description-inner-container {
@@ -184,7 +189,7 @@ a {
     padding: 3.5%;
     margin-bottom: -10%;
     background-color: var(--alternate-background-color);
-    animation: fade-out ease-out 0.25s forwards;
+    animation: fade-out ease-in-out 0.25s forwards;
     cursor: pointer;
 }
 
@@ -192,8 +197,12 @@ a {
     margin-top: 1.5%;
 }
 
+.description-inner-container p, .description-inner-container h2 {
+    color: var(--main-font-color);
+}
+
 .description-inner-container:hover {
-    animation: fade-in ease-out 0.25s forwards;
+    animation: fade-in ease-in-out 0.25s forwards;
 }
 
 @keyframes fade-in {
@@ -225,6 +234,7 @@ a {
     margin: 0% 3%;
 }
 
+/* Footer styles */
 footer {
     background-color: var(--border-color);
 }
@@ -247,15 +257,15 @@ footer {
         padding: 3vh 2.5vw;
     }
 
-    .title h1, #about h1 {
+    .title h1, #about h1, .description-inner-container h2 {
         font-size: var(--font-size-large);
     }
 
-    .flower {
+    .rotating-flower {
         width: 7.5%;
     }
 
-    #about p {
+    #about p, .description-inner-container p {
         font-size: var(--font-size-medium);
     }
 }
@@ -272,19 +282,19 @@ footer {
     }
 
     .title h1 {
-        padding-top: 35%;
+        padding-top: 40%;
         padding-bottom: 45%;
     }
 
-    .flower {
+    .rotating-flower {
         width: 10%;
     }
 
-    .title h1, #about h1 {
+    .title h1, #about h1, .description-inner-container h2 {
         font-size: var(--font-size-medium);
     }
 
-    #about p {
+    #about p, .description-inner-container p {
         font-size: var(--font-size-small);
     }
 
@@ -292,7 +302,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
 
 
 
