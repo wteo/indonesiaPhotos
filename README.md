@@ -1,55 +1,44 @@
-# Photo Gallery
+# Pure HTML & CSS Landing Page: Beauty of Bali
 
-This is a single page <a href="https://wteo.github.io/photoGallery/">website</a> featuring many of my favourite travel photoes whilst I was touring around Indonesia in 2018. Understanding the local history and culture are two areas I especially enjoy exploring whenever I visit a country. Hence, you'll find a lot images of historic temples and day-to-day local activities here.
-
-I built this whilst learning the more advanced concepts of CSS such as FlexBox, Media Response, Grid, Transitions, and Animations. The challenge is to build a sleek website with some simple animations and interactivity added without the help of JavaScript. 
+Hey there! I'm an independent traveler who enjoys embarking on solo adventures every once in a while. During my journeys, I love to immerse myself in the history and culture of the places I visit. In 2018, I took a solo trip to the enchanting island of Bali, and I was captivated by its breathtaking beauty, rich culture, and vibrant landscapes. With this in mind, I decided to create a landing page to showcase the beauty of Bali through the lens of my camera.
 
 <br/>
-<h2>Features</h2>
 
-<h4>The Galleries</h4>
+<h2>About</h2>
+The challenge I set for myself was to build a sleek and visually appealing website that provides an immersive experience without relying on JavaScript. I wanted to demonstrate the power and versatility of CSS in creating an engaging, interactive, and visually appealing website. To achieve this, I implemented advanced CSS concepts such as FlexBox, Media Queries, Grid, Transitions, and Animations.
 
-By default, the photo galleries are arranged in a 2 columns x n rows Grid. 
-
-![image](https://user-images.githubusercontent.com/87306585/185769254-459da99c-00df-4447-bc8b-b4294f342fe5.png)
-
-When you shrink the page to the width of 779px or smaller, the Grid arrangement becomes 1 column x n rows. This is designed with mobile users in mind.
-
-![image](https://user-images.githubusercontent.com/87306585/185769319-d9192277-de6c-4ba1-a280-275db9cecd58.png)
+Through this project, I share my love for Bali and invite you to explore and appreciate the island's beauty through the images I captured during my solo journey. Join me in this visual adventure, and let's appreciate the beauty of Bali together!
 
 <br/>
-<h4>The Navigation Menu</h4>
 
-The menu is hidden on the left side of page. When you hover your mouse or finger over the small visible gray bar on your left, the navigation bar will slide right and show itself. The navigation bar will hide itself again when you hover out of the menu.
+<h2>Components and Design Techniques</h2>
 
-![image](https://user-images.githubusercontent.com/87306585/185769420-a7eca584-6129-4e19-9b02-d5374b89e19d.png)
+In this landing page, I wanted to achieve specific goals with each of the components to create an engaging and immersive experience for the visitors. Here's what I aimed for with each component:
 
-![image](https://user-images.githubusercontent.com/87306585/185769456-ff36d084-6a1a-4c18-a6ef-d383ef94a943.png)
+<h3>1. The Galleries</h3>
+
+I designed the galleries to elegantly display the captivating photos from my Bali trip, showcasing its rich culture and mesmerizing landscapes. The use of CSS Grid enables a responsive layout that automatically adjusts to different screen sizes, ensuring a seamless browsing experience across various devices.
+
+<h3>2. Navigation Menu & Icons</h3>
+
+I wanted the navigation menu to be both functional and visually appealing. The menu smoothly slides in and out upon hovering. In addition, the menu has been designed with added icons to create a more visually appealing and user-friendly interface.
+
+<h3>3. Photos and Descriptions</h3>
+
+The combination of photos and descriptions aims to create a vivid and immersive visual experience. By implementing CSS transitions, I achieved an interactive element where the descriptions smoothly appear when you hover over a photo. This feature adds depth to the images and encourages visitors to explore further.
+
+<h3>4. Rotating Flowers</h3>
+
+To add a touch of personality and charm to the landing page, I created these rotating flowers and incorporated CSS animations. This gives a subtle yet engaging visual effect that brings life to the page and draws attention to the beauty of Bali. 
+
+<h3>5. Color Choice</h3>
+
+The color palette I chose for this project reflects the warm and inviting atmosphere of Bali. By utilizing CSS variables, I maintained a consistent color scheme throughout the landing page, ensuring a cohesive and visually pleasing design.
 
 <br/>
-<h4>The Photoes</h4>
+<h2>Final Thoughts</h2>
 
-Each photo has a hidden description that gives brief details over what the image is about. This description will appear when you hover your mouse or finger over the right-bottom corner of each photo. 
-
-To see the full view of the image again, simply move your mouse or finger away from the description box.
-
-![image](https://user-images.githubusercontent.com/87306585/185769609-5ee96b89-297e-448b-b9ef-f93a5095b577.png)
-
-<br/>
-<h4>Rotating Flowers</h4>
-
-I added these rotating flower icons to test the animation feature in CSS and to give the website a bit more personality. In the design perspective, this also fits the nature and religious vibe of Indonesia. In particular, in popular tourist areas such as Bali. 
-
-![image](https://user-images.githubusercontent.com/87306585/185769488-3f1bc69e-2710-473b-9252-85b9ec1e89c4.png)
-
-<br/>
-<h4>End Words</h4>
-
-What I enjoy most about this project is adding animations to the website. Web design and UI are the areas in web development that I, in particular, have interest in. Hence, this has been a very fun project for me to do.
-
-Please enjoy admiring the photoes as much as I have taking them.
-
-
+Throughout the process of creating this landing page, I've enjoyed the challenge of pushing the boundaries of HTML and CSS, exploring more advanced concepts such as FlexBox, Media Queries, Grid, Transitions, and Animations. Building a sleek, interactive website without relying on JavaScript has been both rewarding and educational. This project not only allowed me to showcase the beauty of Bali, but it has also improved my web development skills, particularly in the areas of design and CSS techniques. I'm proud of the final result, and I hope that the visitors to this landing page can appreciate the effort put into it, while also experiencing a small taste of the captivating charm of Bali.
 
 
 
