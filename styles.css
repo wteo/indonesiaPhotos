@@ -5,6 +5,7 @@
     --alternate-font-color: rgb(214, 156, 112);
     --border-color: rgb(112, 49, 0);
     --border-pattern: 3px solid var(--border-color);
+    --font-size-largest: 3.0rem;
     --font-size-large: 1.5rem;
     --font-size-medium: 1.25rem;
     --font-size-small: 0.875rem;
@@ -73,7 +74,7 @@ a {
 
 #navigation a p {
     color: var(--main-font-color);
-    font-size: 150%;
+    font-size: var(--font-size-large);
     text-align: left;
     margin-left: 1.5vw;
     text-transform: uppercase;
@@ -103,7 +104,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 15px;
-    font-size: 400%;
+    font-size: var(--font-size-largest);
     color: var(--main-font-color);
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,7 +140,7 @@ a {
 }
 
 #about h1 {
-    font-size: 360%;
+    font-size: var(--font-size-largest);
 }
 
 .title, .image-inner-container{
@@ -246,16 +247,16 @@ footer {
         padding: 3vh 2.5vw;
     }
 
-    .title h1 {
-        font-size: 300%;
+    .title h1, #about h1 {
+        font-size: var(--font-size-large);
     }
 
     .flower {
         width: 7.5%;
     }
 
-    #about h1 {
-        font-size: 260%;
+    #about p {
+        font-size: var(--font-size-medium);
     }
 }
 
@@ -263,7 +264,7 @@ footer {
 @media only screen and (max-width: 779px) {
 
     #navigation {
-        right: 30%;
+        right: 20%;
     }
 
     #navigation a p {
@@ -271,7 +272,6 @@ footer {
     }
 
     .title h1 {
-        font-size: 250%;
         padding-top: 35%;
         padding-bottom: 45%;
     }
@@ -280,8 +280,12 @@ footer {
         width: 10%;
     }
 
-    #about h1 {
-        font-size: 160%;
+    .title h1, #about h1 {
+        font-size: var(--font-size-medium);
+    }
+
+    #about p {
+        font-size: var(--font-size-small);
     }
 
     .gallery {
