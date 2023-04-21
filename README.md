@@ -36,6 +36,15 @@ To add a touch of personality and charm to the landing page, I created these rot
 The color palette I chose for this project reflects the warm and inviting atmosphere of Bali. By utilizing CSS variables, I maintained a consistent color scheme throughout the landing page, ensuring a cohesive and visually pleasing design.
 
 <br/>
+<h2>Version History</h2>
+
+As I continue to update and add new features to this landing page, I believe it's essential to provide a version history for visitors to see the progression of the website. This allows you to appreciate the improvements and refinements made over time, as well as helping me track the development process. Here's the list of the current and past versions:
+* <strong><a href="">Version 1.0</a></strong>: The initial version of the landing page features all the core components and design techniques but in a more basic and less refined form. The photo galleries showcase images with a more intricate design, while the text boxes are positioned further to the right and use orange fonts. Each image is framed by a thick border, giving them a distinctive appearance. The menu navigation is smaller and simpler, lacking the visually appealing icons present in the updated version. This early iteration laid the foundation for the subsequent improvements and refinements seen in the current version.
+* <strong><a href="">Version 1.1 (current)</a></strong>: In this updated version of the landing page, I focused on simplifying the design and enhancing readability. There were 2 huge changes: 
+  * Menu: With each of the navigation menu item, I uppercased it, increased its font size, removed its border and added an icon next to it for more visual appeal. The menu now stretches vertically, covering the entire visible screen height.
+  * Photo: With each of the photo gallery, I removed the border, stretched the text box all the way to the left side of the photo and changed the font color to white for better contrast.
+
+<br/>
 <h2>Final Thoughts</h2>
 
 Throughout the process of creating this landing page, I've enjoyed the challenge of pushing the boundaries of HTML and CSS, exploring more advanced concepts such as FlexBox, Media Queries, Grid, Transitions, and Animations. Building a sleek, interactive website without relying on JavaScript has been both rewarding and educational. This project not only allowed me to showcase the beauty of Bali, but it has also improved my web development skills, particularly in the areas of design and CSS techniques. I'm proud of the final result, and I hope that the visitors to this landing page can appreciate the effort put into it, while also experiencing a small taste of the captivating charm of Bali.
