@@ -38,11 +38,16 @@ The color palette I chose for this project reflects the warm and inviting atmosp
 <br/>
 <h2>Version History</h2>
 
-As I continue to update and add new features to this landing page, I believe it's essential to provide a version history for visitors to see the progression of the website. This allows you to appreciate the improvements and refinements made over time, as well as helping me track the development process. Here's the list of the current and past versions:
-* <strong><a href="https://wteo.github.io/photo-gallery-v1.0/" target="_blank">Version 1.0</a></strong> 20/08/2022: The initial version of the landing page features all the core components and design techniques but in a more basic and less refined form. The photo galleries showcase images with a more intricate design, while the text boxes are positioned further to the right and use orange fonts. Each image is framed by a thick border, giving them a distinctive appearance. The menu navigation is smaller and simpler, lacking the visually appealing icons present in the updated version. This early iteration laid the foundation for the subsequent improvements and refinements seen in the current version.
-* <strong><a href="https://wteo.github.io/photoGallery/" target="_blank">Version 1.1 (current)</a></strong> 22/04/2023: In this updated version of the landing page, I focused on simplifying the design and enhancing readability. There were 2 huge changes: 
-  * Menu: With each of the navigation menu item, I uppercased it, increased its font size, removed its border and added an icon next to it for more visual appeal. The menu now stretches vertically, covering the entire visible screen height.
-  * Photo: With each of the photo gallery, I removed the border, stretched the text box all the way to the left side of the photo and changed the font color to white for better contrast.
+As I continue to update and add new features to this landing page, I believe it's essential to provide a version history for visitors to see the progression of the website. This allows you to appreciate the improvements and refinements made over time, as well as helping me track the development process. Here's the list of the current and past versions, categorized by major and minor updates:
+
+<strong>Major version</strong>: Adding or removing components
+<br/>
+<strong>Minor version</strong>: Updating or changing design techniques for existing components
+
+* <strong><a href="https://wteo.github.io/photo-gallery-v1.0/" target="_blank">Version 1.0</a></strong> 20/08/2022: The initial version of the landing page, featuring core components in a less refined form. Intricate photo galleries, right-aligned text boxes with orange fonts, and thick image borders. Smaller and simpler menu navigation without icons.
+* <strong><a href="https://wteo.github.io/photoGallery/" target="_blank">Version 1.1 (current)</a></strong> 22/04/2023: Focused on simplifying design and enhancing readability.
+  * Menu: Uppercased menu items, increased font size, removed borders, added icons for visual appeal, and stretched menu vertically to cover the entire visible screen height.
+  * Photo: Removed image borders, stretched text box to left side of the photo, changed font color to white for better contrast.
 
 <br/>
 <h2>Final Thoughts</h2>
