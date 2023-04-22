@@ -10,6 +10,7 @@
     --font-size-large: 1.5rem;
     --font-size-medium: 1.25rem;
     --font-size-small: 0.875rem;
+    --font-size-smallest: 0.5rem;
 }
   
 * {
@@ -42,6 +43,7 @@ a {
 
 /* Navigation styles */
 #menu {
+    transition: all ease-in-out 0.5s;
     position: fixed;
     width: 50px;
     z-index: 90;
@@ -301,6 +303,57 @@ footer {
     .gallery {
         grid-template-columns: 1fr;
     }
+
+    /* Navigation styles - For mobile phones */
+    #menu {
+        opacity: 0;
+    }
+
+    .navigation-icon {
+        width: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #navigation {
+        position: fixed;
+        top: 85%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        background-color: var(--main-background-color);
+        z-index: 100;
+        transform: none;
+        transition: all ease-in-out 0.5s;
+        padding: 0;
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #navigation:hover {
+        transform: none;
+    }
+
+    #navigation a {
+        padding: 3vh 0.5vw 0.5vh 0.5vw;
+        transition: all 0.5s;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #navigation a p {
+        font-size: var(--font-size-smallest);
+        text-align: center;
+        letter-spacing: 0;
+        margin: 0;
+        padding-top: 0.5vh;
+    }
+
+    #navigation a .navigation-icon {
+        width: 45px;
+    }
+
 }
 
 
