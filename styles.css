@@ -1,15 +1,29 @@
-* {
-    --main-background-color: rgb(165, 95, 42);
-    --alternate-background-color: rgba(0,0,0,0.5);
-    --main-font-color: white;
-    --alternate-font-color: rgb(209, 121, 55);
-    --border-color: rgb(112, 49, 0);
+:root {
+    --main-background-color: rgba(165, 95, 42);
+    --alternate-background-color: rgba(0, 0, 0, 0.7);
+    --main-font-color: #FFFFFF;
+    --alternate-font-color: rgb(234, 159, 101);
+    --shadow-color: rgba(246, 193, 152, 0.6);
+    --border-color: rgb(112,49,0);
     --border-pattern: 3px solid var(--border-color);
-    margin: auto 0;
+    --font-size-largest: 3.0rem;
+    --font-size-large: 1.5rem;
+    --font-size-medium: 1.25rem;
+    --font-size-small: 0.875rem;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Merriweather;
 }
+
+/* This is to 100% fit each image, icon & title into its respective container */
+img, .title, .image-inner-container {
+    width: 100%;
+} 
 
 p, h1, h2 {
     color: var(--alternate-font-color);
@@ -20,77 +34,112 @@ a {
     color: var(--main-font-color);
 }
 
-#navigation {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    right: 72.50%;
-    background-color: var(--alternate-background-color);
-    z-index: 100;
-    transform: translateX(-95%);
-    transition: transform ease-in 0.5s;
-}
-
-#navigation:hover {
-    transform: translateX(0%);
-}
-
-#navigation p {
-    color: var(--main-font-color);
-    background-color: var(--main-background-color);
-    padding: 7.5% 5%;
-    margin: 6%;
-    text-align: center;
-    font-size: 135%;
-    border: var(--border-pattern);
-    transition: background-color 0.25s;
-}
-
-#navigation p:hover, #navigation p:active:after {
-    background-color: var(--border-color);
-}
-
-#navigation, #navigation p {
-    border-radius: 10px;
-}
-
+/* body */
 .main-container {
     display: flex;
     flex-direction: column;
 }
 
-.title h1 {
-    padding-top: 20%;
-    padding-bottom: 25%;
+/* Navigation styles */
+#menu {
+    position: fixed;
+    width: 50px;
+    z-index: 90;
+}
 
+.navigation-icon {
+    width: 50px;
+}
+
+#menu img {
+    margin: 15px;
+    padding: 5px;
+}
+
+#menu:hover {
+    cursor: pointer;
+}
+
+#navigation {
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 72.50%;
+    background-color: var(--main-background-color);
+    z-index: 100;
+    transform: translateX(-80%);
+    transition: all ease-in 0.5s;
+    padding: 10vh 0vw;
+    opacity: 0;
+}
+
+#navigation:hover {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+#navigation a {
+    padding: 3vh 3.5vw;
+    transition: all 0.5s;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 5fr;
+}
+
+#navigation a p {
+    color: var(--main-font-color);
+    font-size: var(--font-size-large);
+    text-align: left;
+    margin-left: 1.5vw;
+    text-transform: uppercase;
+    letter-spacing: 0.25vw;
+}
+
+#navigation a .navigation-icon {
+    width: 50px;
+}
+
+#navigation a:hover, #navigation a:active:after, #navigation a:focus, #navigation a:focus-visible {
+    background-color: var(--border-color);
+    text-decoration: underline;
+}
+
+/* Image Title Syles */
+.title h1 {
+    padding: 27.5% 0 30%;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 15px;
-    font-size: 400%;
+    font-size: var(--font-size-largest);
     color: var(--main-font-color);
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #indonesia-title {
-    background-image: url("./images/titleBali.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("./images/title-bali.jpg");
 }
 
 #yogyakarta-title {
-    background-image: url("./images/titleyogha.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("./images/title-yogha.jpg");
 }
 
 #bali-title {
-    background-image: url("./images/templeGate.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("./images/temple-gate.jpg");
 }
 
+/* About Styles */
 #about {
     border: var(--border-pattern);
     margin: 10% 15%;
     padding: 5% 10%;
     border-radius: 10px;
+}
+
+#about p {
+    font-size: var(--font-size-large);
 }
 
 #about, #copyright {
@@ -99,14 +148,11 @@ a {
 }
 
 #about h1 {
-    font-size: 360%;
+    font-size: var(--font-size-largest);
 }
 
-.title, .image-inner-container{
-    width: 100%;
-}
-
-.flower {
+/* Rotating flower styles */
+.rotating-flower {
     width: 5%;
     display: block;
     margin: 0% auto;
@@ -125,32 +171,25 @@ a {
     }
 }
 
-.title img, .image-inner-container img, #menu-icon img, .flower img {
-    width: 100%; 
+.title img, .image-inner-container img, #menu-icon img, .rotating-flower img {
     display: block;
     transition: width 2s;
 }
 
-.image-inner-container {
-    border: var(--border-pattern);
-    border-radius: 15px;
-}
-
+/* Image gallery Styles */
 .image-inner-container img {
-    padding: 1%;
-    border-radius: 20px;
     position: relative;
+    box-shadow: 10px 10px 20px var(--shadow-color); 
 }
 
 .description-inner-container {
     z-index: 25;
     position: relative;
-    top: -135px;
-    padding: 2%;
-    margin-left: 15%;
-    margin-bottom: -5%;
-    background-color: rgba(0, 0, 0, 0.752);
-    animation: fade-out ease-out 0.25s forwards;
+    top: -130px;
+    padding: 3.5%;
+    margin-bottom: -10%;
+    background-color: var(--alternate-background-color);
+    animation: fade-out ease-in-out 0.25s forwards;
     cursor: pointer;
 }
 
@@ -158,17 +197,18 @@ a {
     margin-top: 1.5%;
 }
 
+.description-inner-container p, .description-inner-container h2 {
+    color: var(--main-font-color);
+}
+
 .description-inner-container:hover {
-    animation: fade-in ease-out 0.25s forwards;
+    animation: fade-in ease-in-out 0.25s forwards;
 }
 
 @keyframes fade-in {
     0% {
         transform: translateY(-50%);
         opacity: 0;
-    }
-    70% {
-        transform: translateY(10%);
     }
     100% {
         transform: translateY(0%);
@@ -190,72 +230,80 @@ a {
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-content: center;
-    column-gap: 2%;
+    column-gap: 3.5%;
     margin: 0% 3%;
 }
 
+/* Footer styles */
 footer {
-    background-color: var(--main-background-color);
+    background-color: var(--border-color);
 }
 
 #copyright p {
     color: var(--main-font-color);
 }
 
-@media only screen and (max-width: 1150px) and (min-width: 780px) {
+
+/* Media Queries */
+
+/* For devices with a width between 780px and 1150px */
+@media only screen and (min-width: 780px) and (max-width: 1150px) {
 
     #navigation {
-        right: 70%;
+        right: 50%;
     }
 
-    #navigation p {
-        font-size: 115%;
+    #navigation a p {
+        padding: 3vh 2.5vw;
     }
 
-    .title h1 {
-        font-size: 300%;
+    .title h1, #about h1, .description-inner-container h2 {
+        font-size: var(--font-size-large);
     }
 
-    .flower {
+    .rotating-flower {
         width: 7.5%;
     }
 
-    #about h1 {
-        font-size: 260%;
+    #about p, .description-inner-container p {
+        font-size: var(--font-size-medium);
     }
 }
 
+/* For devices with a width up to 779px */
 @media only screen and (max-width: 779px) {
 
     #navigation {
-        right: 57.5%;
+        right: 20%;
     }
 
-    #navigation p {
-        font-size: 87.5%;
+    #navigation a p {
+        padding: 3vh 5vw;
     }
 
     .title h1 {
-        font-size: 200%;
-        padding-top: 35%;
+        padding-top: 40%;
         padding-bottom: 45%;
     }
 
-    .flower {
+    .rotating-flower {
         width: 10%;
     }
 
-    #about h1 {
-        font-size: 160%;
+    .title h1, #about h1, .description-inner-container h2 {
+        font-size: var(--font-size-medium);
+    }
+
+    #about p, .description-inner-container p {
+        font-size: var(--font-size-small);
     }
 
     .gallery {
         grid-template-columns: 1fr;
     }
-
 }
+
+
 
 
 
