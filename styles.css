@@ -18,7 +18,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Merriweather;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
 }
 
 /* This is to 100% fit each image, icon & title into its respective container */
@@ -140,8 +140,16 @@ a {
     border-radius: 10px;
 }
 
+.title h1, #about h1 {
+    font-size: var(--font-size-largest);
+}
+
 #about p {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-medium);
+}
+
+.description-inner-container h2, .description-inner-container p {
+    font-size: var(--font-size-small);
 }
 
 #about, #copyright {
@@ -259,17 +267,23 @@ footer {
         padding: 3vh 2.5vw;
     }
 
-    .title h1, #about h1, .description-inner-container h2 {
-        font-size: var(--font-size-large);
+    .title h1, #about h1 {
+        font-size: var(--font-size-largest);
+    }
+    
+    .description-inner-container h2, .description-inner-container p {
+        font-size: var(--font-size-small);
+    }
+
+    .description-inner-container {
+        top: -110px;
+        margin-bottom: -15%;
     }
 
     .rotating-flower {
         width: 7.5%;
     }
 
-    #about p, .description-inner-container p {
-        font-size: var(--font-size-medium);
-    }
 }
 
 /* For devices with a width up to 779px */
@@ -288,20 +302,28 @@ footer {
         padding-bottom: 45%;
     }
 
-    .rotating-flower {
-        width: 10%;
+    .title h1, #about h1 {
+        font-size: var(--font-size-large);
     }
-
-    .title h1, #about h1, .description-inner-container h2 {
-        font-size: var(--font-size-medium);
-    }
-
-    #about p, .description-inner-container p {
+    
+    #about p {
         font-size: var(--font-size-small);
+    }
+    
+    .description-inner-container h2, .description-inner-container p {
+        font-size: var(--font-size-small);
+    }
+
+    .description-inner-container {
+        top: -110px;
     }
 
     .gallery {
         grid-template-columns: 1fr;
+    }
+
+    .rotating-flower {
+        width: 10%;
     }
 
     /* Navigation styles - For mobile phones */
