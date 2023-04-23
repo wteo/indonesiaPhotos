@@ -10,6 +10,7 @@
     --font-size-large: 1.5rem;
     --font-size-medium: 1.25rem;
     --font-size-small: 0.875rem;
+    --font-size-smallest: 0.5rem;
 }
   
 * {
@@ -17,7 +18,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Merriweather;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
 }
 
 /* This is to 100% fit each image, icon & title into its respective container */
@@ -42,6 +43,7 @@ a {
 
 /* Navigation styles */
 #menu {
+    transition: all ease-in-out 0.5s;
     position: fixed;
     width: 50px;
     z-index: 90;
@@ -138,8 +140,16 @@ a {
     border-radius: 10px;
 }
 
+.title h1, #about h1 {
+    font-size: var(--font-size-largest);
+}
+
 #about p {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-medium);
+}
+
+.description-inner-container h2, .description-inner-container p {
+    font-size: var(--font-size-small);
 }
 
 #about, #copyright {
@@ -257,17 +267,23 @@ footer {
         padding: 3vh 2.5vw;
     }
 
-    .title h1, #about h1, .description-inner-container h2 {
-        font-size: var(--font-size-large);
+    .title h1, #about h1 {
+        font-size: var(--font-size-largest);
+    }
+    
+    .description-inner-container h2, .description-inner-container p {
+        font-size: var(--font-size-small);
+    }
+
+    .description-inner-container {
+        top: -110px;
+        margin-bottom: -15%;
     }
 
     .rotating-flower {
         width: 7.5%;
     }
 
-    #about p, .description-inner-container p {
-        font-size: var(--font-size-medium);
-    }
 }
 
 /* For devices with a width up to 779px */
@@ -286,21 +302,80 @@ footer {
         padding-bottom: 45%;
     }
 
-    .rotating-flower {
-        width: 10%;
+    .title h1, #about h1 {
+        font-size: var(--font-size-large);
     }
-
-    .title h1, #about h1, .description-inner-container h2 {
-        font-size: var(--font-size-medium);
-    }
-
-    #about p, .description-inner-container p {
+    
+    #about p {
         font-size: var(--font-size-small);
+    }
+    
+    .description-inner-container h2, .description-inner-container p {
+        font-size: var(--font-size-small);
+    }
+
+    .description-inner-container {
+        top: -110px;
     }
 
     .gallery {
         grid-template-columns: 1fr;
     }
+
+    .rotating-flower {
+        width: 10%;
+    }
+
+    /* Navigation styles - For mobile phones */
+    #menu {
+        opacity: 0;
+    }
+
+    .navigation-icon {
+        width: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #navigation {
+        position: fixed;
+        top: 85%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        background-color: var(--main-background-color);
+        z-index: 100;
+        transform: none;
+        transition: all ease-in-out 0.5s;
+        padding: 0;
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #navigation:hover {
+        transform: none;
+    }
+
+    #navigation a {
+        padding: 3vh 0.5vw 0.5vh 0.5vw;
+        transition: all 0.5s;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #navigation a p {
+        font-size: var(--font-size-smallest);
+        text-align: center;
+        letter-spacing: 0;
+        margin: 0;
+        padding-top: 0.5vh;
+    }
+
+    #navigation a .navigation-icon {
+        width: 45px;
+    }
+
 }
 
 
